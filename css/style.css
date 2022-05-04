@@ -73,7 +73,6 @@ img {
 
 .one-header {
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
@@ -90,7 +89,7 @@ img {
 .nav_list {
     display: flex;
     column-gap: 2rem;
-    margin-top: 2.5rem;
+    margin-top: -1rem;
     text-align: center;
     justify-content: center;
     font-size: 11px;
@@ -111,7 +110,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .intro_box,
@@ -122,8 +121,12 @@ img {
 .rounded-full {
     border-radius: 9999px;
     background-color: var(--second-color);
-   
+    box-shadow: -3px -3px 7px #eb944273,
+    7px 5px 5px rgba(215, 134, 47, 0.288);
+    position: relative ;
 }
+
+
 
 .w-48 {
     width: 13rem;
@@ -180,6 +183,113 @@ img {
 }
 
 .social_buttons a {
+    margin: 3% 6%;
+    color: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+}
+
+/* PROJECTS */
+
+
+
+.project .portfolio_showcase {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.box_container {
+    width: 70%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_container {
+    background-color:white;
+    margin:6%;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94,104,121, .288   );
+}
+
+/* .box_container:hover {
+    margin: 2%;
+    height: 220px;
+    transition: .3s;
+} */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.paragraph {
+    color: black;
+}
+
+.project_details h3 {
+    font-size: 19px;
+    color: rgb(111, 106, 106);
+}
+
+.project_details p {
+    color: rgb(90, 81, 81);
+    height: 2.5rem;
+}
+
+.project_details small {
+    margin-bottom: 13px;
+    font-size: var(--small-font);
+    color: #9e8f8f;
+}
+
+.box .project_links a {
+    font-size: var(--small-font);
+    line-height: 21px;
+    color: inherit;
+    text-decoration: none;
+    margin-right: 7px;
+    color: #9e8f8f;
+}
+
+.project .go_button_container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+.go_button_container a {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.go_button_container button {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    padding: 0.9rem 2rem;
+    font-size: var(--small-font);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+
+
+.social_button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+}
+
+.social_button a {
     margin: 3% 6%;
     color: inherit;
     font-size: 1rem;
