@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- boxicon -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>portfolio</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"> -->
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <header class="one-header">
+    <header class="one-header" id="header">
+        <nav class="nav container">
+
             <div class="nav_menu" id="nav-menu">
-            
-    
                 <ul class="nav_list">
-                    <li class="nav_item" ><a href="index.html" class="nav_link"><b>Portfolio</b></a></li>
-                    <li class="nav_item"><a href="https://www.linkedin.com/in/imykel/" class="nav_link"><b>Contact Me</b></a></li>
+                    <li class="nav_item"><a href="index.html" class="nav_link"><b>Portfolio</b></a></li>
+                    <li class="nav_item"><a href="https://www.linkedin.com/in/imykel/" class="nav_link"><b>Contact
+                                Me</b></a></li>
                     <li class="nav_item"><a href="#" class="nav_link"><b>Resume </b></a></li>
+                    <div class="nav_btns">
+                        <!-- These change button    -->
+                        <i class='bx bx-moon change-theme' id="theme-button"></i>
+                    </div>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="hero">
-        <div class="intro_box">
-            <div class="my-pic"><img class="w-48 h-48 rounded-full" src="image/my-avatar.png "alt="my-avatar"></div>
-            <h2 class="intro-header">Hello! I'm Michael Olatunji.</h2>
-    
-            <div class="description">
-                <p><span> Poised, professional, and product-oriented Mobile Engineer <br> with 5+ years of experience working in a variety of fast- <br> paced, dynamic, and ever-changing settings.Experence <br>includes working with and leading teams in building and <br> designing beautiful User interface.</span></p>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="http://www.instagram.com/" target="_blank" class="home_social-icon">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+
+                        <a href="https://www.twitter.com/" target="_blank" class="home_social-icon">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+
+                        <a href="https://github.com/praisejahuzoma" target="_blank" class="home_social-icon">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+
+                    <div class="home_img">
+                        <img src="image/my-avatar.png" class="home_blob-img">
+                    </div>
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, I'am Praisejah</h1>
+                        <p class="home_description"><span> Poised, professional, and product-oriented Mobile Engineer
+                                with 5+ years of experience working in a
+                                variety of fast-paced, dynamic, and ever-changing settings.Experence includes working
+                                with and leading
+                                teams in building and designing beautiful User interface.</span></p>
+                        <div class="button button--flex">
+                            <a href="project.html"><button class="explore">Explore ➜</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="go_button">
-                <a href="project.html"><button class="explore">Explore ➜</button></a>
-            </div>
-    
-            <div class="social_buttons">
-                <a href="https://github.com/imykie" target="_blank" rel="noopener noreferrer"><i
-                        class='bx bxl-github'></i></a>
-                <a href="https://twitter.com/_imyke" target="_blank" rel="noopener noreferrer"><i
-                        class='bx bxl-twitter'></i></a>
-                <a href="https://www.linkedin.com/in/imykel/" target="_blank" rel="noopener noreferrer"><i
-                        class='bx bxl-linkedin-square'></i></a>
-            </div>
+        </section>
         </div>
+        </section>
     </main>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
